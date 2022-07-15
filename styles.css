@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: tahoma;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.container{
+  width: 87%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+}
+.logo{
+  width: 30%;
+}
+.nav{
+  width: 70%;
+  position: relative;
+}
+.nav >ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  background-color: #fff;
+}
+.nav> ul> li{
+  margin-right: 20px;
+}
+.nav >ul> li:hover .dropdown li{
+  display: block;
+  transition: 1s;
+}
+.nav> ul >li >a{
+  font-size:18px ;
+  font-weight: 600;
+  color: #121212;
+  font-family: tahoma;
+  margin-right: 20px;
+  
+}
+hr{
+  border: none;
+  border-bottom: 5px solid #ccc;
+}
+.dropdown{
+  display: none;
+}
+.nav> ul >li:hover >ul{
+  display: block;
+}
